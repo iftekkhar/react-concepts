@@ -37,9 +37,6 @@
 9. The setter function is a Async Function 
 ***
 
-### React.memo:
-When The the parent component rerenders all of it's child will also rerender . To optimize this we can use React.memo and pass the child component. React.memo will performe a shallow comparison (as deep comparison is expensive) between the two props and update only if the props has changed. But it is advised not to use react.memo everytime because if it is found in the shallow comparison that the props has changed react will perform a deep comparison and rerender. 
-***
 ### useReducer()
 1. more suited for managing state objects that contain multiple sub-values.
 ***
@@ -60,3 +57,7 @@ These two hooks are provided for optimizing the performance . we need to remembe
 ``` javascript
 useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
 ```
+
+### React.memo:
+When The the parent component rerenders all of it's child will also rerender . To optimize this we can use React.memo and pass the child component. React.memo will performe a shallow comparison (as deep comparison is expensive) between the two props and update only if the props has changed. But it is advised not to use react.memo everytime because if it is found in the shallow comparison that the props has changed react will perform a deep comparison and rerender. 
+***
