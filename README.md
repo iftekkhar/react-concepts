@@ -1,10 +1,19 @@
 # React Concepts
-
-## React Philosophy 
 1. If the state of the parerent updates , all of it's children will rerender unless said otherwise ( using memo or callback hook)
 2. unnessary Render : Whre components goes through render phase but not the commit phase .
-2. Components can change it's State but not props
+3. Components can change it's State but not props
+4. Create-react-App Creates CSR(Client Side Rendering) - > though with Next.js or Gatsby we can achieve SSR & SSG.
+5. Jsx is not not understood by the browser we need bable as the transpiler (Comes pre configured with create-react-app api).
+6. We need web pack to bundle everything (Comes pre configured with create-react-app api)
 ***
+
+## Reacts' Philosophy 
+1. To keep every component a pure function
+2. One way data binding (Parent -> Child)
+***
+## When to use: 
+1. Web Apps where SEO is not Important (Crawlers cant not craw on CSR websites)
+3. Very Fast & Interactive UI is Needed
 
 ## React Hooks : 
 1. Provides Better Performance. (minifies better)
@@ -36,6 +45,7 @@ When The the parent component rerenders all of it's child will also rerender . T
 ***
 
 ### useCallback() & useMemo()
+These two hooks are provided for optimizing the performance . we need to remember that when optimizing the render of one component react will also skip rerendering the components entire subtree because it's effectively stoping the default behaviour. However if the prop of the parent component changes (therefore the state of the greatparent is changed then the default behavious will be envoked to make sure every component is synced .  
 
 1. useCallback()
 	- Returns a memoized Callback.
