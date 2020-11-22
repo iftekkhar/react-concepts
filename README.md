@@ -60,4 +60,6 @@ useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
 
 ### React.memo:
 When The the parent component rerenders all of it's child will also rerender . To optimize this we can use React.memo and pass the child component. React.memo will performe a shallow comparison (as deep comparison is expensive) between the two props and update only if the props has changed. But it is advised not to use react.memo everytime because if it is found in the shallow comparison that the props has changed react will perform a deep comparison and rerender. 
+
+"If you are familiar with React.PureComponent then React.memo is quite straightforward as it is exactly similar to React.PureComponent. We use React.PureComponent with class component while React.memo works with functional components. It is not a hook"
 ***
