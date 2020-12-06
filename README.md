@@ -1,5 +1,5 @@
 # React Concepts
-1. If the state of the parerent updates , all of it's children will rerender unless said otherwise ( using memo or callback hook)
+1. If the state of the parerent updates , all of it's children will rerender unless said otherwise ( useing react.memo )
 2. unnessary Render : Whre components goes through render phase but not the commit phase .
 3. Components can change it's State but not props
 4. Create-react-App Creates CSR(Client Side Rendering) - > though with Next.js or Gatsby we can achieve SSR & SSG.
