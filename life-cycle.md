@@ -19,7 +19,7 @@
 2. pure function
 3. Can not change state
 
-###componentDidMount -->
+### componentDidMount -->
 1. Called only once after the componet and all its childern has been rendered
 2. Perfect place to cause sideEffects
 
@@ -28,7 +28,7 @@
 
 ### static getDerivedStateFromProps --> 
 
-###shouldComponentUpdate(nextProp, NextState) --> 
+### shouldComponentUpdate(nextProp, NextState) --> 
 1. It can compare the previous state & props & The next state & Props values & Decide should the components update or not
 2. Used for performance optimization
 3. SHouldnt call setState or cause sideeffects
